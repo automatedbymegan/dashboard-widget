@@ -43,16 +43,39 @@ body {
 
 .shooting-star {
   position: absolute;
-  width: 0;
-  height: 0;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-bottom: 12px solid #efa7c4;
-  transform: rotate(45deg);
+  width: 6px;
+  height: 6px;
+  background: #efa7c4;
+  border-radius: 50%;
   box-shadow: 0 0 10px #efa7c4;
   animation: shoot 8s ease-in-out infinite;
   opacity: 0;
 }
+
+.shooting-star::before,
+.shooting-star::after {
+  content: "";
+  position: absolute;
+  background: #efa7c4;
+  box-shadow: 0 0 6px #efa7c4;
+}
+
+.shooting-star::before {
+  width: 12px;
+  height: 2px;
+  left: -3px;
+  top: 2px;
+  transform: rotate(45deg);
+}
+
+.shooting-star::after {
+  width: 12px;
+  height: 2px;
+  left: -3px;
+  top: 2px;
+  transform: rotate(-45deg);
+}
+
 
 @keyframes shoot {
   0% {
