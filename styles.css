@@ -19,7 +19,7 @@ body {
 .widget-container {
   position: relative;
   text-align: center;
-  padding: 20px 30px;
+  padding: 10px 20px;
   max-width: 400px;
   border-radius: 20px;
   background: transparent;
@@ -28,7 +28,7 @@ body {
 
 .datetime .date {
   font-size: 1.6rem;
-  margin-bottom: 4px;
+  margin-bottom: 0px;
   font-family: 'Pacifico', cursive;
   color: #b69bcf;
 }
