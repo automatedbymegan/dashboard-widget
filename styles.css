@@ -4,26 +4,19 @@
 
 
 body {
-  margin: 0;
-  padding: 0;
-  background: transparent;
-  font-family: 'Playfair Display', serif;
-  color: black;
+  background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  overflow: hidden;
+  margin: 0;
 }
 
 .widget-container {
-  position: relative;
+  width: 100%;
+  max-width: 100%;
+  padding: 2rem;
   text-align: center;
-  padding: 10px 20px;
-  max-width: 400px;
-  border-radius: 20px;
-  background: transparent;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .datetime .date {
@@ -88,5 +81,18 @@ body {
   100% {
     transform: translate(100vw, -100vh) scale(0.5);
     opacity: 0;
+  }
+}
+
+
+@media (prefers-color-scheme: dark) {
+  .datetime .time {
+    color: #ffffff;
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.4);
+  }
+
+  .datetime .date {
+    color: #eeeeee;
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.3);
   }
 }
