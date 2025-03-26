@@ -43,11 +43,13 @@ body {
 
 .shooting-star {
   position: absolute;
-  width: 6px;
-  height: 6px;
-  background: #efa7c4;
-  box-shadow: 0 0 12px #efa7c4;
-  border-radius: 50%;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 12px solid #efa7c4;
+  transform: rotate(45deg);
+  box-shadow: 0 0 10px #efa7c4;
   animation: shoot 8s ease-in-out infinite;
   opacity: 0;
 }
